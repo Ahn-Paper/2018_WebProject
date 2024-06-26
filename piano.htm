@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>나의 뉴에이지 음악공간</title>
+<meta charset="UTF-8">
+<script type ="text/javascript">
+function down(){
+	var keycode = event.keyCode;
+	if(keycode==81){document.getElementById('C').play();}
+	else if(keycode==50){document.getElementById('C2').play();}
+	else if(keycode==87){document.getElementById('D').play();}	
+	else if(keycode==51){document.getElementById('D2').play();}
+	else if(keycode==69){document.getElementById('E').play();}	
+	else if(keycode==82){document.getElementById('F').play();}	
+	else if(keycode==53){document.getElementById('F2').play();}	
+	else if(keycode==84){document.getElementById('G').play();}	
+	else if(keycode==54){document.getElementById('G2').play();}	
+	else if(keycode==89){document.getElementById('A').play();}	
+	else if(keycode==55){document.getElementById('A2').play();}	
+	else if(keycode==85){document.getElementById('B').play();}	
+	else if(keycode==73){document.getElementById('CC').play();}	
+}
+function up(){
+	var keycode = event.keyCode;
+	if(keycode==81){
+		document.getElementById("C").currentTime = 0;
+		document.getElementById('C').pause();}
+	else if(keycode==50){
+	document.getElementById("C2").currentTime = 0;
+	document.getElementById('C2').pause();}
+	else if(keycode==87){
+		document.getElementById("D").currentTime = 0;
+		document.getElementById('D').pause();}	
+	else if(keycode==51){
+		document.getElementById("D2").currentTime = 0;
+		document.getElementById('D2').pause();}
+	else if(keycode==69){
+		document.getElementById("E").currentTime = 0;
+		document.getElementById('E').pause();}	
+	else if(keycode==82){
+		document.getElementById("F").currentTime = 0;
+		document.getElementById('F').pause();}	
+	else if(keycode==53){
+		document.getElementById("F2").currentTime = 0;
+		document.getElementById('F2').pause();}	
+	else if(keycode==84){
+		document.getElementById("G").currentTime = 0;
+		document.getElementById('G').pause();}	
+	else if(keycode==54){
+		document.getElementById("G2").currentTime = 0;
+		document.getElementById('G2').pause();}	
+	else if(keycode==89){
+		document.getElementById("A").currentTime = 0;
+		document.getElementById('A').pause();}	
+	else if(keycode==55){
+		document.getElementById("A2").currentTime = 0;
+		document.getElementById('A2').pause();}	
+	else if(keycode==85){
+		document.getElementById("B").currentTime = 0;
+		document.getElementById('B').pause();}	
+	else if(keycode==73){
+		document.getElementById("CC").currentTime = 0;
+		document.getElementById('CC').pause();}		
+}
+</script>
+
+<style type="text/css">
+	body{
+		background-color : #f0f0f0;
+		font-family : '나눔 고딕';
+		text-align:center; 							
+		}			
+	.border{
+		border : double 4px;
+		background-color: #ffffff;
+		margin: 10px auto;
+		min-height:700px;
+		max-width: 960px;
+		min-width: 660px;
+		padding: 30px 20px;
+		}
+</style>
+</head>
+
+<body>
+	<div class="border">
+			<h1>
+				<a href="main.htm">
+					<img src="source/logo.jpg">
+				</a>
+			</h1>
+			<h1>피아노</h1>			
+		
+		<br>
+		자판 입력 : 
+		<input type="text" onkeydown="down()" onkeyup="up()">
+		<figure>
+			<img src="source/key.jpg">		
+		</figure>
+		<audio id="C" src="source/piano/C.MP3"></audio>
+		<audio id="C2" src="source/piano/C2.MP3"></audio>
+		<audio id="D" src="source/piano/D.MP3"></audio>
+		<audio id="D2" src="source/piano/D2.MP3"></audio>
+		<audio id="E" src="source/piano/E.MP3"></audio>
+		<audio id="F" src="source/piano/F.MP3"></audio>
+		<audio id="F2" src="source/piano/F2.MP3"></audio>
+		<audio id="G" src="source/piano/G.MP3"></audio>
+		<audio id="G2" src="source/piano/G2.MP3"></audio>
+		<audio id="A" src="source/piano/A.MP3"></audio>
+		<audio id="A2" src="source/piano/A2.MP3"></audio>
+		<audio id="B" src="source/piano/B.MP3"></audio>
+		<audio id="CC" src="source/piano/CC.MP3"></audio>
+	</div>
+</body>
+</html>
